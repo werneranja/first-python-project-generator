@@ -1,0 +1,20 @@
+import random
+
+# Define lists of subjects, themes, and focus areas
+subjects = ['History', 'Mathematics', 'Biology', 'Computer Science']
+themes = ['the impact of technology on', 'historical revolutions in', 'modern advances in', 'theoretical concepts in']
+focus_areas = ['education', 'the environment', 'healthcare', 'society']
+
+def generate_coursework_topic():
+    # Randomly select one element from each list
+    subject = random.choice(subjects)
+    theme = random.choice(themes)
+    focus_area = random.choice(focus_areas)
+    
+    # Combine the elements into a topic statement
+    topic = f"Explore {theme} {subject} and its effects on {focus_area}."
+    
+    return topic
+
+# Generate and print a coursework topic
+print(generate_coursework_topic())
